@@ -1,0 +1,51 @@
+{
+  "modules": [
+    {
+      "id": "./src/title.js",
+      "dependencies": {},
+      "names": ["entry1", "entry2"],
+      "_source": "module.exports = \"title\";"
+    }
+  ],
+  "chunks": [
+    {
+      "name": "entry1",
+      "entryModule": {
+        "id": "./src/entry1.js",
+        "dependencies": {},
+        "names": ["entry1"],
+        "_source": "let title = require(\"./src/title.js\");\nconsole.log(\"entry\", title);"
+      },
+      "modules": [
+        {
+          "id": "./src/title.js",
+          "dependencies": {},
+          "names": ["entry1", "entry2"],
+          "_source": "module.exports = \"title\";"
+        }
+      ]
+    },
+    {
+      "name": "entry2",
+      "entryModule": {
+        "id": "./src/entry2.js",
+        "dependencies": {},
+        "names": ["entry2"],
+        "_source": "let title = require(\"./src/title.js\");\nconsole.log(\"entry211\", title);"
+      },
+      "modules": [
+        {
+          "id": "./src/title.js",
+          "dependencies": {},
+          "names": ["entry1", "entry2"],
+          "_source": "module.exports = \"title\";"
+        }
+      ]
+    }
+  ],
+  "assets": {
+    "entry1.js": "\n  (() => {\n    var modules = {\n      \n          \"./src/title.js\": module => {\n            module.exports = \"title\";\n          }\n        \n    };\n    var cache = {};\n    function require(moduleId) {\n      var cachedModule = cache[moduleId];\n      if (cachedModule !== undefined) {\n        return cachedModule.exports;\n      }\n      var module = cache[moduleId] = {\n        exports: {}\n      };\n      modules[moduleId](module, module.exports, require);\n      return module.exports;\n    }\n    var exports = {};\n    (() => {\n      let title = require(\"./src/title.js\");\nconsole.log(\"entry\", title);\n    })();\n  })();\n  ",
+    "entry2.js": "\n  (() => {\n    var modules = {\n      \n          \"./src/title.js\": module => {\n            module.exports = \"title\";\n          }\n        \n    };\n    var cache = {};\n    function require(moduleId) {\n      var cachedModule = cache[moduleId];\n      if (cachedModule !== undefined) {\n        return cachedModule.exports;\n      }\n      var module = cache[moduleId] = {\n        exports: {}\n      };\n      modules[moduleId](module, module.exports, require);\n      return module.exports;\n    }\n    var exports = {};\n    (() => {\n      let title = require(\"./src/title.js\");\nconsole.log(\"entry211\", title);\n    })();\n  })();\n  "
+  },
+  "files": ["entry1.js", "entry2.js"]
+}

@@ -1,0 +1,209 @@
+{
+  "hash": "9943e9b86432cc5a1066",
+  "version": "5.76.2",
+  "time": 95,
+  "builtAt": 1679281646741,
+  "publicPath": "auto",
+  "outputPath": "D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\dist",
+  "assetsByChunkName": {
+    "entry1": ["entry1.js"],
+    "entry2": ["entry2.js"]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "entry2.js",
+      "chunkNames": ["entry2"]
+    },
+    {
+      "type": "asset",
+      "name": "entry1.js",
+      "chunkNames": ["entry1"]
+    }
+  ],
+  "chunks": [
+    {
+      "names": ["entry1"],
+      "runtime": ["entry1"],
+      "files": ["entry1.js"],
+      "hash": "34cea5d7e2eef298a37e",
+      "origins": [
+        {
+          "loc": "entry1",
+          "request": "./src/entry1.js"
+        }
+      ]
+    },
+    {
+      "names": ["entry2"],
+      "runtime": ["entry2"],
+      "files": ["entry2.js"],
+      "hash": "31fd3b5044c4fd08c191",
+      "origins": [
+        {
+          "loc": "entry2",
+          "request": "./src/entry2.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "identifier": "D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\loaders\\loader2.js!D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\loaders\\loader1.js!D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\src\\entry1.js",
+      "name": "./src/entry1.js",
+      "id": "./src/entry1.js",
+      "issuerId": null,
+      "chunks": ["entry1"],
+      "assets": [],
+      "reasons": [
+        {
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./src/entry1.js",
+          "loc": "entry1"
+        }
+      ]
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "identifier": "D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\loaders\\loader2.js!D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\loaders\\loader1.js!D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\src\\entry2.js",
+      "name": "./src/entry2.js",
+      "id": "./src/entry2.js",
+      "chunks": ["entry2"],
+      "assets": [],
+      "reasons": [
+        {
+          "type": "entry",
+          "active": true,
+          "userRequest": "./src/entry2.js",
+          "loc": "entry2"
+        }
+      ]
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "identifier": "D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\loaders\\loader2.js!D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\loaders\\loader1.js!D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\src\\title.js",
+      "name": "./src/title.js",
+      "issuerName": "./src/entry1.js",
+      "issuerPath": [
+        {
+          "identifier": "D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\loaders\\loader2.js!D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\loaders\\loader1.js!D:\\Desktop\\个人\\珠峰架构\\前端工程化\\myWebpack\\4.flow\\src\\entry1.js",
+          "name": "./src/entry1.js",
+          "id": "./src/entry1.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/title.js",
+      "issuerId": "./src/entry1.js",
+      "chunks": ["entry1", "entry2"],
+      "assets": [],
+      "reasons": [
+        {
+          "module": "./src/entry1.js",
+          "type": "cjs require",
+          "userRequest": "./title",
+          "resolvedModuleId": "./src/entry1.js"
+        },
+        {
+          "module": "./src/entry2.js",
+          "type": "cjs require",
+          "userRequest": "./title",
+          "resolvedModuleId": "./src/entry2.js"
+        },
+        {
+          "module": "./src/title.js",
+          "type": "cjs self exports reference",
+          "resolvedModuleId": "./src/title.js"
+        }
+      ]
+    }
+  ],
+  "entrypoints": {
+    "entry1": {
+      "name": "entry1",
+      "chunks": ["entry1"],
+      "assets": [
+        {
+          "name": "entry1.js",
+          "size": 1633
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 1633,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "entry2": {
+      "name": "entry2",
+      "chunks": ["entry2"],
+      "assets": [
+        {
+          "name": "entry2.js",
+          "size": 1636
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 1636,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "entry1": {
+      "name": "entry1",
+      "chunks": ["entry1"],
+      "assets": [
+        {
+          "name": "entry1.js",
+          "size": 1633
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 1633,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "entry2": {
+      "name": "entry2",
+      "chunks": ["entry2"],
+      "assets": [
+        {
+          "name": "entry2.js",
+          "size": 1636
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 1636,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}
